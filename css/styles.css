@@ -187,6 +187,7 @@ h1, h2, h3, p {
     line-height: 1.87;
     letter-spacing: 0.06em;
     text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -226,9 +227,7 @@ h1, h2, h3, p {
     border-radius: 4px;
 
     background-color: #F5F4FA;
-    /* background-image: url(../img/benefits/antenna.svg); */
     background-repeat: no-repeat;
-    /* background-size: contain; */
     background-position: center;
 }
 
@@ -308,8 +307,7 @@ h1, h2, h3, p {
 } */
 
 .team-text-conteiner {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 32px;
     text-align: center;
 }
 
@@ -318,6 +316,47 @@ h1, h2, h3, p {
 
     font-weight: 500;
     color: var(--title-text-color);
+}
+
+.team-text {
+    margin-bottom: 16px;
+}
+
+.team-icon-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-icon-item {
+    width: 44px;
+    height: 44px;
+    background-color: tomato;
+    border-radius: 50%;
+}
+
+
+/* clients */
+
+.clients-list {
+    display: flex;
+}
+
+.clients-item {
+    flex-basis: calc((100% - 30px ) / 6);
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.team-icon-link {
+    display: block;
+}
+.team-icon-link:hover {
+    border: 2px solid var(--accent-color);
+}
+
+.clients-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 
@@ -370,6 +409,10 @@ h1, h2, h3, p {
     margin: 15px;
 }
 
+.projects-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .projects-text {
     padding: 20px 24px;
     border-left: 1px solid #EEEEEE;
@@ -391,20 +434,6 @@ h1, h2, h3, p {
     font-size: 16px;
     line-height: 1.87;
     color: var(--primary-text-color);
-}
-
-.clients-list {
-    display: flex;
-    
-}
-
-.clients-item {
-    flex-basis: calc((100% - 30px ) / 6);
-    outline: 1px solid tomato;
-}
-
-.clients-item:not(:last-child) {
-    margin-right: 30px;
 }
 
 
