@@ -239,11 +239,27 @@ h1, h2, h3, p {
 }
 
 .benefits-item {
-    flex-basis: calc(100% * 4 - 30px);
+    flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
 }
 
-.benefits-item::before {
+.benefits-icon-bg {
+    display: flex;
+    height: 120px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+}
+
+.benefits-icon {
+    width: 70px;
+    height: 70px;
+}
+
+
+/* .benefits-item::before {
     display: block;
     content: '';
     height: 120px;
@@ -253,9 +269,9 @@ h1, h2, h3, p {
     background-color: #F5F4FA;
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 
-.benefits-icon-antenna::before {
+/* .benefits-icon-antenna::before {
     background-image: url(../img/benefits/antenna.svg);
 }
 
@@ -269,7 +285,7 @@ h1, h2, h3, p {
 
 .benefits-icon-astronaut::before {
     background-image: url(../img/benefits/astronaut.svg);
-}
+} */
 
 .benefits-title {
     margin-bottom: 10px;
@@ -314,7 +330,7 @@ h1, h2, h3, p {
 
 .team-item {
     margin-right: 30px;
-
+    flex-basis: calc((100% - 3 * 30px) / 4);
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
     0px 1px 1px rgba(0, 0, 0, 0.14), 
@@ -555,6 +571,9 @@ h1, h2, h3, p {
     color: var(--basic-white-color);
 }
 
+.join {
+    margin-right: auto;
+}
 .join-icon {
     background-color: rgba(255, 255, 255, 0.1);;
 }
