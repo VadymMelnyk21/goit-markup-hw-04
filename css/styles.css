@@ -530,6 +530,7 @@ h1, h2, h3, p {
 }
 
 .footer-container {
+    align-items: baseline;
     display: flex;
 }
 
@@ -565,15 +566,12 @@ h1, h2, h3, p {
 
 .join-text {
     margin-bottom: 20px;
-    
+    font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--basic-white-color);
 }
 
-.join {
-    margin-right: auto;
-}
 .join-icon {
     background-color: rgba(255, 255, 255, 0.1);;
 }
